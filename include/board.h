@@ -48,6 +48,9 @@ class Board {
     int8_t castling = NO_CASTLING;
     Square enpassant = SQ_NONE;
 
+    Board(const std::string &fen) {
+      loadFEN(fen);
+    }
     void loadFEN(const std::string &fen);
     void print() const;
 };  

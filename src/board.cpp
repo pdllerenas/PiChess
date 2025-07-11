@@ -82,3 +82,8 @@ void Board::loadFEN(const std::string &fen) {
   ++pos;
 
 }
+
+
+void print() {
+  std::cout << "test" << std::endl;
+}
